@@ -1,0 +1,19 @@
+---
+layout: default
+---
+   
+
+<div class="posts">
+    <table>
+        <tr>
+            <th><h2>Blog Posts</h2></th>
+        </tr>
+        {% for post in site.posts %}
+        <tr class="post">
+            <td>
+                <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

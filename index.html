@@ -2,17 +2,43 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!--JUMBOTRON-->
+<section class="jumbotron" id="main" role="main">
+    <div class="row">
+        <div class="col-xs-12 text-center">
+            <div class="intro-text">
+              <h1 class="name">SEMAJ THOMAS</h1>
+              <span class="skills">{ Front-End Web Developer }</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<section id="front-page-links">
+    <div class="container">
+        <div class="row">
+           <div class="col-md-3 text-center white-background">
+                <h2>
+                    <a href="{{ site.baseurl }}/portfolio">{ PORTFOLIO }</a>
+                </h2>
+            </div>
+            <div class="col-md-3 text-center green-background">
+                <h2>
+                    <a href="{{ site.baseurl }}/about">{ ABOUT }</a>
+                </h2>
+            </div>
+            <div class="col-md-3 text-center white-background">
+                <h2>
+                    <a href="{{ site.baseurl }}/contact">{ CONTACT }</a>
+                </h2>
+            </div>
+            <div class="col-md-3 text-center green-background">
+                <h2>
+                    <a href="{{ site.baseurl }}/hire">{ HIRE ME }</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
