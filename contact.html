@@ -27,39 +27,47 @@ layout: default
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form id="contactForm" method="POST">
+                    <div id="thanks" class="alert alert-success" role="alert" style="display:none;">
+                        <strong>Success!</strong> Thanks for contacting me, we'll be in touch soon.
+                    </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" placeholder="eg. Semaj Thomas">
-                            <p class="help-block text-danger"></p>
+                            <label for="name">Your Name *</label>
+                            <input type="text" name="name" class="form-control" placeholder="eg. Semaj Thomas" required="required" data-error="Your name is required to send a message.">
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label for="email">Email address</label>
-                            <input type="text" class="form-control" placeholder="eg. example@yourdomain.com">
-                            <p class="help-block text-danger"></p>
+                            <label for="email">Email address *</label>
+                            <input type="email" name="_replyto" class="form-control" placeholder="eg. example@yourdomain.com" required="required" data-error="Please enter a valid email address">
+                            <div class="help-block with-errors"></div>
+                            <input type="hidden" name="_subject" value="New submission!" />
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label for="website">Your website</label>
-                            <input type="text" class="form-control" placeholder="eg. semajthomas.com">
-                            <p class="help-block text-danger"></p>
+                            <input type="text" name="website" class="form-control" placeholder="eg. semajthomas.com">
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label for="message">Message</label>
-                            <textarea rows="5" class="form-control" placeholder="" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
+                            <label for="message">Message *</label>
+                            <textarea rows="5" class="form-control" name="message" id="message" required="required" data-error="Please enter a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                            <input type="text" name="_gotcha" style="display:none" />
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="form-group col-xs-12">
                             <button type="submit" class="btn btn-contact">SEND</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="text-muted"><strong>*</strong>These fields are required.</div>
                         </div>
                     </div>
                 </form>
