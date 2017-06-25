@@ -31,29 +31,32 @@ layout: default
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <form>
+                <form action="https://formspree.io/ajtames@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="//semajthomas.com/thanks.html" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_subject" value="New submission!" />
                     <h2>About You</h2>
                     <hr>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                            <label for="name">Your Name</label>
-                           <input type="text" class="form-control" placeholder="eg. Semaj Thomas">
+                           <input type="text" name="name" class="form-control" placeholder="eg. Semaj Thomas">
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12">
                             <label for="email">Email address</label>
-                            <input type="text" class="form-control" placeholder="eg. example@yourdomain.com">
+                            <input type="email" name="_replyto" class="form-control" placeholder="eg. example@yourdomain.com">
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-md-6">
                             <label for="name">Contact method</label>
-                            <input type="tel" class="form-control" placeholder="eg. (000) 000-0000">
+                            <input type="tel" name="name" class="form-control" placeholder="eg. (000) 000-0000">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="name">Your website</label>
-                            <input type="email" class="form-control" placeholder="eg. semajthomas.com">
+                            <input type="text" name="name" class="form-control" placeholder="eg. semajthomas.com">
                         </div>
                     </div>
                     <h2>Project Details</h2>
@@ -61,11 +64,11 @@ layout: default
                     <div class="row control-group">
                         <div class="form-group col-md-6">
                             <label for="name">Your Budget</label>
-                            <input type="text" class="form-control" id="budgetId" name="budgetId" placeholder="eg. $1000">
+                            <input type="text" name="name" class="form-control" id="budgetId" name="budgetId" placeholder="eg. $1000">
                         </div>
                         <div class="dropdown col-md-6">
                             <label for="name">Your ideal start date</label>
-                            <select class="form-control">
+                            <select class="form-control" name="name">
                                 <option value="withinone">Please select</option>
                                 <option value="withinone">Within 1 week</option>
                                 <option value="withinonetwo">1-2 week</option>
@@ -82,12 +85,12 @@ layout: default
                     <div class="row control-group">
                         <div class="form-group col-xs-12">
                          <label for="message">Please briefly describe your project, what you aim to achieve, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox).</label>
-                         <textarea rows="5" class="form-control" placeholder="" id="message" required data-validation-required-message=""></textarea>
+                         <textarea rows="5" name="name" class="form-control" placeholder="" id="message" required data-validation-required-message=""></textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-contact">SEND</button>
+                            <button type="submit" class="btn btn-contact" value="send">SEND</button>
                         </div>
                     </div>
                 </form>
