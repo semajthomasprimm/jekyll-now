@@ -28,9 +28,9 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <form action="https://formspree.io/ajtames@gmail.com" method="POST">
-                    <div id="thanks" class="alert alert-success" role="alert" style="display:none;">
-                        <strong>Success!</strong> Thanks for contacting me, we'll be in touch soon.
-                    </div>
+                    <input type="hidden" name="_next" value="//semajthomas.com/thanks.html" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="hidden" name="_subject" value="New submission!" />
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label for="name">Your Name *</label>
@@ -43,7 +43,6 @@ layout: default
                             <label for="email">Email address *</label>
                             <input type="email" name="_replyto" class="form-control" placeholder="eg. example@yourdomain.com" required="required" data-error="Please enter a valid email address">
                             <div class="help-block with-errors"></div>
-                            <input type="hidden" name="_subject" value="New submission!" />
                         </div>
                     </div>
                     <div class="row control-group">
@@ -57,7 +56,6 @@ layout: default
                             <label for="message">Message *</label>
                             <textarea rows="5" class="form-control" name="message" id="message" required="required" data-error="Please enter a message."></textarea>
                             <div class="help-block with-errors"></div>
-                            <input type="text" name="_gotcha" style="display:none" />
                         </div>
                     </div>
                     <div class="row">
