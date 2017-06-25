@@ -39,14 +39,16 @@ layout: default
                     <hr>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                           <label for="name">Your Name</label>
+                           <label for="name">Your Name *</label>
                            <input type="text" name="name" class="form-control" placeholder="eg. Semaj Thomas" required="required" data-error="Your name is required to send a message.">
+                           <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12">
-                            <label for="email">Email address</label>
-                            <input type="email" name="_replyto" class="form-control" placeholder="eg. example@yourdomain.com" required="required" data-error="Please enter a valid email address">
+                            <label for="email">Email address *</label>
+                            <input type="email" name="_replyto" class="form-control" placeholder="eg. example@yourdomain.com" required="required" data-error="Please enter a valid email address.">
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="row control-group">
@@ -63,11 +65,12 @@ layout: default
                     <hr>
                     <div class="row control-group">
                         <div class="form-group col-md-6">
-                            <label for="name">Your Budget</label>
+                            <label for="name">Your Budget *</label>
                             <input type="text" name="name" class="form-control" id="budgetId" name="budgetId" placeholder="eg. $1000" required="required" data-error="Please enter a valid amount.">
+                            <div class="help-block with-errors"></div>
                         </div>
                         <div class="dropdown col-md-6">
-                            <label for="name">Your ideal start date</label>
+                            <label for="name">Your ideal start date *</label>
                             <select class="form-control" name="name" required="required" data-error="Please enter a valid duration.">
                                 <option value="withinone">Please select</option>
                                 <option value="withinone">Within 1 week</option>
@@ -78,19 +81,26 @@ layout: default
                                 <option value="greaterthreemonths">3+ months</option>
                                 <option value="notsure">Not sure</option>
                             </select>
+                            <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <h2>Project Description</h2>
                     <hr>
                     <div class="row control-group">
                         <div class="form-group col-xs-12">
-                         <label for="message">Please briefly describe your project, what you aim to achieve, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox).*</label>
+                         <label for="message">Please briefly describe your project, what you aim to achieve, what you'd like me to do, and link to any appropriate materials (such as PSDs available via Dropbox). *</label>
                          <textarea rows="5" name="name" class="form-control" placeholder="" id="message" required="required" data-error="Please enter a project description."></textarea>
+                         <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-xs-12">
                             <button type="submit" class="btn btn-contact" value="send">SEND</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="text-muted"><strong>*</strong>These fields are required.</div>
                         </div>
                     </div>
                 </form>
