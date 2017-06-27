@@ -272,7 +272,7 @@ section.jumbotron{
   }
 }
 
-#portfolio, #contact, #about{
+#contact, #about, #thanks{
     background-color: $lightGray;
     
     a{
@@ -284,6 +284,17 @@ section.jumbotron{
         color:$darkerGreen;
     }
 }
+
+.thanks-ok{
+    color: $green-bg;
+}
+
+@media (max-width:550px){
+    #thanks h2{
+        font-size: 1em;
+    }
+}
+
 
 .white-background, .green-background{
     a{
@@ -407,6 +418,11 @@ footer{
 // PORTFOLIO STYLING RULES
 /*************************/
 
+
+#portfolio{
+    background-color: $lightGray;
+}
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -511,14 +527,6 @@ footer{
     min-height: 100%;
     padding: 100px 0;
     text-align: center;
-    
-    a{
-        color:$green-bg;
-    }
-    
-    a:hover{
-        color:$darkerGreen;
-    }
 }
 .portfolio-modal .modal-content h2{
     margin: 0;
@@ -618,14 +626,13 @@ footer{
     color: #d1d1d1;
 }
 
-.btn-primary{
-    color: white;
+.btn-scroll-top {
+    color: #fff;
     background-color: $green-bg;
-    border-color: #15a832;
-    font-weight: 700;
+    border-color: $darkerGreen;
 }
 
-.success-top{
+.scroll-top{
     position: fixed;
     right: 2%;
     bottom: 2%;
@@ -638,7 +645,7 @@ footer{
         width: 50px;
         height: 50px;
         border-radius: 100%;
-        line-height: 28px;
+        line-height: 34px;
     }
 }
 
