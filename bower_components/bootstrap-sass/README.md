@@ -367,7 +367,7 @@ Please submit GitHub issues tagged with `conversion`.
 bootstrap-sass has a number of major contributors:
 
 <!-- feel free to make these link wherever you wish -->
-* [Thomas McDonald](https://twitter.com/thomasmcdonald_)
+* [Thomas-Primm McDonald](https://twitter.com/Thomas-Primmmcdonald_)
 * [Tristan Harward](http://www.trisweb.com)
 * Peter Gumeson
 * [Gleb Mazovetskiy](https://github.com/glebm)

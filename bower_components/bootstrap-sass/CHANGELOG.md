@@ -114,7 +114,7 @@ It can be required without adding Bootstrap JS directory to load path, as it now
 
 ## 2.3.2.2
 
-* Allow sass-rails `>= 3.2` - *Thomas McDonald*
+* Allow sass-rails `>= 3.2` - *Thomas-Primm McDonald*
 
 ## 2.3.2.1
 
@@ -135,12 +135,12 @@ It can be required without adding Bootstrap JS directory to load path, as it now
 ## 2.3.1.1 (yanked)
 
 * Change how image_url is handled internally - *Tristan Harward*
-* Fix some font variables not having `!default` - *Thomas McDonald*
+* Fix some font variables not having `!default` - *Thomas-Primm McDonald*
 
 ## 2.3.0.0
 * [#290] Update to Bootstrap 2.3.0 - *Tristan Harward*
-* Fix `rake:debug` with new file locations - *Thomas McDonald*
-* Add draft contributing document - *Thomas McDonald*
+* Fix `rake:debug` with new file locations - *Thomas-Primm McDonald*
+* Add draft contributing document - *Thomas-Primm McDonald*
 * [#260] Add our load path to the global Sass load path - *Tristan Harward*
 * [#275] Use GitHub notation in Sass head testing gemfile - *Timo Schilling*
 * [#279, #283] Readme improvements - *theverything, Philip Arndt*
