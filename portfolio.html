@@ -25,6 +25,30 @@ layout: default
         </div>
         <div class="row">
             <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ site.baseurl }}/images/to-do-list-image.png" class="img-responsive" alt="To Do List App">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="{{ site.baseurl }}/images/calculator.png" class="img-responsive" alt="Javascript Calculator">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 portfolio-item">
                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                     <div class="caption">
                         <div class="caption-content">
@@ -61,16 +85,8 @@ layout: default
 
 <!--PORTFOLIO MODALS-->
 
-<<<<<<< HEAD
-
-
-
-<!--conFusion MODAL-->
-<div class="portfolio-modal modal fade" id="portfolioModal2" role="dialog" aria-hidden="true">
-=======
-<!--PSRP MODAL-->
+<!--TO DO LIST MODAL-->
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
->>>>>>> 393aaf64ad45d284495f7f71546c850b57d0bba7
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -82,26 +98,95 @@ layout: default
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                    <div class="modal-body">
-<<<<<<< HEAD
-                     <h2>ConFusion</h2>
-                     <img src="{{ site.baseurl }}/images/conFusion.png" class="img-responsive img-centered">
-                     <p>This project was built in a Web Developer course. While developing ConFusion, I implemented of carousels, modals, menus, buttons, alerts, and labels. ConFusion serves as a demonstration of my Bootstrap proficiency.</p>
-                     <a type="button" class="btn btn-success" href="https://semajthomasprimm.github.io/conFusion/">View Demo</a>
-                     <a type="button" class="btn btn-info" href="http://github.com/semajthomasprimm/conFusion">View Code</a>
+                     <h2>To Do List Javascript App</h2>
+                     <img src="{{ site.baseurl }}/images/to-do-list-image.png" class="img-responsive img-centered">
+                     <p>I built a To Do using Javascript. It allows users to add items, clear the list, and remove items from the list.</p>
+                     <a type="button" class="btn btn-success" href="https://semajthomasprimm.github.io/To-Do-List/">View Demo</a>
+                     <a type="button" class="btn btn-info" href="semajprimm.me/To-Do-List">View Code</a>
                      <ul class="list-inline item-details">
                         <li>
-                           <strong>Client:</strong>
-                            <p>Class Assignment</p>
+                            <strong>Client:</strong>
+                            <p>Personal Project</p>
                         </li>
-                        <li><strong>Project type:</strong>
-                            <p>Mock Restuarant Website</p>
+                        <li>
+                            <strong>Project type:</strong>
+                            <p>Productivity</p>
                         </li>
-                        <li><strong>Date:</strong>
-                            <p>November 2016</p>
+                        <li>
+                            <strong>Date:</strong>
+                            <p>March 2020</p>
                         </li>
-                        <li><strong>Technology:</strong>
-                            <p>Bootstrap, HTML5, CSS3, jQuery and AngularJS</p>
-=======
+                        <li>
+                            <strong>Technology:</strong>
+                            <p>HTML, CSS, Javascript</p>
+                        </li>
+                     </ul>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Calculator MODAL-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                   <div class="modal-body">
+                     <h2>Calculator Javascript App</h2>
+                     <img src="{{ site.baseurl }}/images/calculator.png" class="img-responsive img-centered">
+                     <p>I built a Calculator using Javascript. It has basic arithmetic functionalities and a clearing feature.</p>
+                     <a type="button" class="btn btn-success" href="https://semajthomasprimm.github.io/Calculator/">View Demo</a>
+                     <a type="button" class="btn btn-info" href="http://github.com/semajthomasprimm/Calculator">View Code</a>
+                     <ul class="list-inline item-details">
+                        <li>
+                            <strong>Client:</strong>
+                            <p>Personal Project</p>
+                        </li>
+                        <li>
+                            <strong>Project type:</strong>
+                            <p>Calculator App</p>
+                        </li>
+                        <li>
+                            <strong>Date:</strong>
+                            <p>March 2020</p>
+                        </li>
+                        <li>
+                            <strong>Technology:</strong>
+                            <p>HTML, CSS, Javascript</p>
+                        </li>
+                     </ul>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--PSRP MODAL-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                   <div class="modal-body">
                      <h2>Psychedelic Studies Research Program at UTM Site</h2>
                      <img src="{{ site.baseurl }}/images/uoft_research.png" class="img-responsive img-centered">
                      <p>I worked with Professor Norman Farb of the Psychology department to migrate the Psychedelic Studies Research Program(PSRP) from an external 
@@ -123,10 +208,9 @@ layout: default
                         <li>
                             <strong>Technology:</strong>
                             <p>Drupal, HTML, Photoshop</p>
->>>>>>> 393aaf64ad45d284495f7f71546c850b57d0bba7
                         </li>
                      </ul>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
                     </div>
                 </div>
             </div>
@@ -134,13 +218,8 @@ layout: default
     </div>
 </div>
 
-<<<<<<< HEAD
-<!--SMART TEXT MODAL-->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-=======
 <!--conFusion MODAL-->
 <div class="portfolio-modal modal fade" id="portfolioModal2" role="dialog" aria-hidden="true">
->>>>>>> 393aaf64ad45d284495f7f71546c850b57d0bba7
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -152,30 +231,27 @@ layout: default
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                    <div class="modal-body">
-                     <h2>Smart Text</h2>
-                     <img src="{{ site.baseurl }}/images/smart-text.png" class="img-responsive img-centered">
-                     <p>Smart Text is a personal project I developed in 3 days using Bootstrap. The goal of this exercise was to develop a responsive, simple website for a fake software company. I designed and coded it by myself. My source of inspiration was the <a href="http://brackets.io">Brackets</a> website.</p>
-                     <a type="button" class="btn btn-success" href="https://semajthomasprimm.github.io/smart-text/" role="button">View Demo</a>
-                     <a type="button" class="btn btn-info" href="https://github.com/semajthomasprimm/smart-text" role="button" >View Code</a>
+                     <h2>ConFusion</h2>
+                     <img src="{{ site.baseurl }}/images/conFusion.png" class="img-responsive img-centered">
+                     <p>This project was built in a Web Developer course. While developing ConFusion, I implemented of carousels, modals, menus, buttons, alerts, and labels. ConFusion serves as a demonstration of my Bootstrap proficiency.</p>
+                     <a type="button" class="btn btn-success" href="https://semajthomasprimm.github.io/conFusion/">View Demo</a>
+                     <a type="button" class="btn btn-info" href="http://github.com/semajthomasprimm/conFusion">View Code</a>
                      <ul class="list-inline item-details">
                         <li>
-                            <strong>Client:</strong>
-                            <p>Personal project</p>
+                           <strong>Client:</strong>
+                            <p>Class Assignment</p>
                         </li>
-                        <li>
-                            <strong>Project type:</strong>
-                            <p>Simple landing page</p>
+                        <li><strong>Project type:</strong>
+                            <p>Mock Restuarant Website</p>
                         </li>
-                        <li>
-                            <strong>Date:</strong>
-                            <p>September 2016</p>
+                        <li><strong>Date:</strong>
+                            <p>November 2016</p>
                         </li>
-                        <li>
-                            <strong>Technology:</strong>
-                            <p>Bootstrap, HTML5, CSS3</p>
+                        <li><strong>Technology:</strong>
+                            <p>Bootstrap, HTML5, CSS3, jQuery and AngularJS</p>
                         </li>
                      </ul>
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                     </div>
                 </div>
             </div>
